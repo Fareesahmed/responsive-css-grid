@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Cards Grid</title>
+    <style>
+        * {
+            box-sizing: border-box;
+            margin: 0;
+            padding: 0;
+        }
+
+        body {
+            background-color: yellow;
+            color: black;
+            font-family: Arial, sans-serif;
+            padding: 20px;
+        }
+
+        .grid-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease;
+            cursor: pointer;
+        }
+
+        .card:hover {
+            transform: translateY(-10px);
+        }
+
+        .card h3 {
+            margin-bottom: 10px;
+        }
+
+        .card p {
+            margin-bottom: 15px;
+            color: gray;
+        }
+
+        .hero {
+            display: none;
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 0, 0, 0.8);
+            color: white;
+            padding: 50px;
+            text-align: center;
+            justify-content: center;
+            align-items: center;
+            z-index: 9999;
+        }
+
+        .hero-content {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        .hero h2 {
+            margin-bottom: 20px;
+            font-size: 36px;
+        }
+
+        .hero p {
+            font-size: 18px;
+            margin-bottom: 20px;
+        }
+
+        .close-btn {
+            background-color: #fff;
+            border: none;
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+        }
+    </style>
+</head>
+<body>
+
+    <div class="grid-container">
+        <!-- 16 Cards -->
+        <div class="card" onclick="openHero('Card 1')">
+            <h3>Card 1</h3>
+            <p>Some description for card 1.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 2')">
+            <h3>Card 2</h3>
+            <p>Some description for card 2.</p>
+        </div>
+        <!-- Repeat similar cards -->
+        <div class="card" onclick="openHero('Card 3')">
+            <h3>Card 3</h3>
+            <p>Some description for card 3.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 4')">
+            <h3>Card 4</h3>
+            <p>Some description for card 4.</p>
+        </div>
+        <!-- Add more cards up to 16 -->
+        <!-- Placeholder for remaining cards -->
+        <div class="card" onclick="openHero('Card 5')">
+            <h3>Card 5</h3>
+            <p>Some description for card 5.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 6')">
+            <h3>Card 6</h3>
+            <p>Some description for card 6.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 7')">
+            <h3>Card 7</h3>
+            <p>Some description for card 7.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 8')">
+            <h3>Card 8</h3>
+            <p>Some description for card 8.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 9')">
+            <h3>Card 9</h3>
+            <p>Some description for card 9.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 10')">
+            <h3>Card 10</h3>
+            <p>Some description for card 10.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 11')">
+            <h3>Card 11</h3>
+            <p>Some description for card 11.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 12')">
+            <h3>Card 12</h3>
+            <p>Some description for card 12.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 13')">
+            <h3>Card 13</h3>
+            <p>Some description for card 13.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 14')">
+            <h3>Card 14</h3>
+            <p>Some description for card 14.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 15')">
+            <h3>Card 15</h3>
+            <p>Some description for card 15.</p>
+        </div>
+        <div class="card" onclick="openHero('Card 16')">
+            <h3>Card 16</h3>
+            <p>Some description for card 16.</p>
+        </div>
+    </div>
+
+    <!-- Hero Section -->
+    <div id="hero" class="hero">
+        <div class="hero-content">
+            <h2 id="hero-title">Hero Title</h2>
+            <p id="hero-desc">Hero description goes here...</p>
+            <button class="close-btn" onclick="closeHero()">Close</button>
+        </div>
+    </div>
+
+    <script>
+        function openHero(title) {
+            document.getElementById('hero-title').textContent = title;
+            document.getElementById('hero-desc').textContent = 'This is a more detailed description for ' + title + '.';
+            document.getElementById('hero').style.display = 'flex';
+        }
+
+        function closeHero() {
+            document.getElementById('hero').style.display = 'none';
+        }
+    </script>
+</body>
+</html>
