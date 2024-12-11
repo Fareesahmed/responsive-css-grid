@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Responsive Cards Grid with Image</title>
+    <title>Responsive Food Menu Cards</title>
     <style>
         * {
             box-sizing: border-box;
@@ -12,7 +12,7 @@
         }
 
         body {
-            background-color: yellow;
+            background-color: white;
             color: black;
             font-family: Arial, sans-serif;
             padding: 20px;
@@ -112,61 +112,102 @@
 <body>
 
     <div class="grid-container">
-        <!-- 16 Cards -->
-        <div class="card" onclick="openHero('Card 1', 'https://via.placeholder.com/600x400', 'Some description for card 1.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 1 Image">
+        <!-- 12 Food Menu Cards -->
+        <div class="card" onclick="openHero('Pizza Margherita', 'https://via.placeholder.com/600x400?text=Pizza+Margherita', 'Classic Italian pizza with fresh tomatoes and mozzarella.')">
+            <img src="https://via.placeholder.com/600x400?text=Pizza+Margherita" alt="Pizza Margherita">
             <div class="card-content">
-                <h3>Card 1</h3>
-                <p>Some description for card 1.</p>
+                <h3>Pizza Margherita</h3>
+                <p>Classic Italian pizza with fresh tomatoes and mozzarella.</p>
             </div>
         </div>
 
-        <div class="card" onclick="openHero('Card 2', 'https://via.placeholder.com/600x400', 'Some description for card 2.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 2 Image">
+        <div class="card" onclick="openHero('Spaghetti Bolognese', 'https://via.placeholder.com/600x400?text=Spaghetti+Bolognese', 'Traditional Italian pasta with rich beef sauce.')">
+            <img src="https://via.placeholder.com/600x400?text=Spaghetti+Bolognese" alt="Spaghetti Bolognese">
             <div class="card-content">
-                <h3>Card 2</h3>
-                <p>Some description for card 2.</p>
-            </div>
-        </div>
-        
-        <!-- Repeat similar cards -->
-        <div class="card" onclick="openHero('Card 3', 'https://via.placeholder.com/600x400', 'Some description for card 3.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 3 Image">
-            <div class="card-content">
-                <h3>Card 3</h3>
-                <p>Some description for card 3.</p>
+                <h3>Spaghetti Bolognese</h3>
+                <p>Traditional Italian pasta with rich beef sauce.</p>
             </div>
         </div>
 
-        <div class="card" onclick="openHero('Card 4', 'https://via.placeholder.com/600x400', 'Some description for card 4.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 4 Image">
+        <div class="card" onclick="openHero('Caesar Salad', 'https://via.placeholder.com/600x400?text=Caesar+Salad', 'Crisp romaine lettuce with Caesar dressing and parmesan.')">
+            <img src="https://via.placeholder.com/600x400?text=Caesar+Salad" alt="Caesar Salad">
             <div class="card-content">
-                <h3>Card 4</h3>
-                <p>Some description for card 4.</p>
+                <h3>Caesar Salad</h3>
+                <p>Crisp romaine lettuce with Caesar dressing and parmesan.</p>
             </div>
         </div>
 
-        <!-- Add more cards up to 16 -->
+        <div class="card" onclick="openHero('Sushi Platter', 'https://via.placeholder.com/600x400?text=Sushi+Platter', 'Assorted sushi with fresh fish, wasabi, and soy sauce.')">
+            <img src="https://via.placeholder.com/600x400?text=Sushi+Platter" alt="Sushi Platter">
+            <div class="card-content">
+                <h3>Sushi Platter</h3>
+                <p>Assorted sushi with fresh fish, wasabi, and soy sauce.</p>
+            </div>
+        </div>
 
-        <!-- Placeholder for remaining cards -->
-        <div class="card" onclick="openHero('Card 5', 'https://via.placeholder.com/600x400', 'Some description for card 5.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 5 Image">
+        <div class="card" onclick="openHero('Grilled Steak', 'https://via.placeholder.com/600x400?text=Grilled+Steak', 'Juicy grilled steak with roasted vegetables.')">
+            <img src="https://via.placeholder.com/600x400?text=Grilled+Steak" alt="Grilled Steak">
             <div class="card-content">
-                <h3>Card 5</h3>
-                <p>Some description for card 5.</p>
+                <h3>Grilled Steak</h3>
+                <p>Juicy grilled steak with roasted vegetables.</p>
             </div>
         </div>
-        
-        <!-- Additional cards... -->
-        <div class="card" onclick="openHero('Card 6', 'https://via.placeholder.com/600x400', 'Some description for card 6.')">
-            <img src="https://via.placeholder.com/600x400" alt="Card 6 Image">
+
+        <div class="card" onclick="openHero('Vegetarian Burger', 'https://via.placeholder.com/600x400?text=Vegetarian+Burger', 'A delicious plant-based burger with fresh vegetables.')">
+            <img src="https://via.placeholder.com/600x400?text=Vegetarian+Burger" alt="Vegetarian Burger">
             <div class="card-content">
-                <h3>Card 6</h3>
-                <p>Some description for card 6.</p>
+                <h3>Vegetarian Burger</h3>
+                <p>A delicious plant-based burger with fresh vegetables.</p>
             </div>
         </div>
-        
-        <!-- Add more as needed... -->
+
+        <div class="card" onclick="openHero('Pancakes with Syrup', 'https://via.placeholder.com/600x400?text=Pancakes+with+Syrup', 'Fluffy pancakes served with maple syrup and berries.')">
+            <img src="https://via.placeholder.com/600x400?text=Pancakes+with+Syrup" alt="Pancakes with Syrup">
+            <div class="card-content">
+                <h3>Pancakes with Syrup</h3>
+                <p>Fluffy pancakes served with maple syrup and berries.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openHero('Tacos', 'https://via.placeholder.com/600x400?text=Tacos', 'Mexican tacos with beef, avocado, and salsa.')">
+            <img src="https://via.placeholder.com/600x400?text=Tacos" alt="Tacos">
+            <div class="card-content">
+                <h3>Tacos</h3>
+                <p>Mexican tacos with beef, avocado, and salsa.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openHero('Chicken Curry', 'https://via.placeholder.com/600x400?text=Chicken+Curry', 'Spicy Indian chicken curry with basmati rice.')">
+            <img src="https://via.placeholder.com/600x400?text=Chicken+Curry" alt="Chicken Curry">
+            <div class="card-content">
+                <h3>Chicken Curry</h3>
+                <p>Spicy Indian chicken curry with basmati rice.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openHero('Cheesecake', 'https://via.placeholder.com/600x400?text=Cheesecake', 'Creamy cheesecake with a graham cracker crust.')">
+            <img src="https://via.placeholder.com/600x400?text=Cheesecake" alt="Cheesecake">
+            <div class="card-content">
+                <h3>Cheesecake</h3>
+                <p>Creamy cheesecake with a graham cracker crust.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openHero('Lasagna', 'https://via.placeholder.com/600x400?text=Lasagna', 'Layered lasagna with beef, ricotta, and tomato sauce.')">
+            <img src="https://via.placeholder.com/600x400?text=Lasagna" alt="Lasagna">
+            <div class="card-content">
+                <h3>Lasagna</h3>
+                <p>Layered lasagna with beef, ricotta, and tomato sauce.</p>
+            </div>
+        </div>
+
+        <div class="card" onclick="openHero('Ice Cream Sundae', 'https://via.placeholder.com/600x400?text=Ice+Cream+Sundae', 'Vanilla ice cream with chocolate syrup and cherries.')">
+            <img src="https://via.placeholder.com/600x400?text=Ice+Cream+Sundae" alt="Ice Cream Sundae">
+            <div class="card-content">
+                <h3>Ice Cream Sundae</h3>
+                <p>Vanilla ice cream with chocolate syrup and cherries.</p>
+            </div>
+        </div>
     </div>
 
     <!-- Hero Section -->
